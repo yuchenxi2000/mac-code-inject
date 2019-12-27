@@ -15,7 +15,7 @@ int Memory::AttachSelf(); attach to self (dll inject)
 
 write code into given address
 
-use asmjit for machine code generation
+use asmjit (https://github.com/asmjit/asmjit) for machine code generation
 
 example:
 
@@ -40,6 +40,8 @@ test program: test.cpp
 2. compile test.cpp to test as our executable to inject
 
 3. run add_library.py to add a LC_LOAD_DYLIB command to the Mach-O file test (we use LIEF library to modify the Mach-O file)
+
+> LIEF: pip install lief, https://github.com/lief-project/LIEF
 
 4. run test, and you can see our dylib is successfully injected.
 
