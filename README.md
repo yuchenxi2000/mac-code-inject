@@ -17,6 +17,10 @@ write code into given address
 
 use asmjit (https://github.com/asmjit/asmjit) for machine code generation
 
+* hook.hpp:
+
+hook a library function or internal function
+
 example:
 
 ``` c++
